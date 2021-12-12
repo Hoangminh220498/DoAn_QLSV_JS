@@ -1,0 +1,192 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(cv.jpg);
+    font-size: large;
+}
+.form-student, .edit-form-student, #list-student {
+    width: 250px;
+    border: 1px solid #ccc;
+    margin-left: 25px;
+    float: left;
+}
+.form-student {
+    margin-top: 65px;
+}
+.edit-form-student {
+    margin-top: 65px;
+    display: none;
+}
+#list-student {
+    margin-top: 18px;
+    width: 950px;
+}
+h1 {
+    font-size: 50px;
+    margin-left: 30%;
+    padding: auto;
+}
+h3 {
+    padding: 0px;
+    margin-top: 0px;
+}
+.form-student label {
+    width: 150px;
+    float: left;
+}
+.form-faculty label {
+    width: 150px;
+    float: left;
+}
+.form-class label {
+    width: 150px;
+    float: left;
+}
+.form-student input {
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: silver;
+    background-color: Transparent;
+}
+.form-student select {
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: silver;
+    background-color: Transparent;
+}
+.form-faculty input {
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: silver;
+    background-color: Transparent;
+}
+.form-class input {
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: silver;
+    background-color: Transparent;
+}
+.edit-form-student label {
+    width: 150px;
+    float: left;
+}
+.edit-form-student input {
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: silver;
+    background-color: Transparent;
+}
+.edit-form-student select {
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: silver;
+    background-color: Transparent;
+}
+.edit-form-faculty label {
+    width: 150px;
+    float: left;
+}
+.edit-form-faculty input {
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: silver;
+    background-color: Transparent;
+}
+.edit-form-class label {
+    width: 150px;
+    float: left;
+}
+.edit-form-class input {
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: silver;
+    background-color: Transparent;
+}
+button {
+    margin-left: 65px;
+    font-size: 18px;
+    color:black;
+    background-color: goldenrod;
+    margin: 10px;
+}
+.search-student {
+    float: right;
+    margin-right: 30px;
+    position: relative;
+}
+#search {
+    width: 70%;
+    height: 25px;
+    border-radius: 3px;
+    border: 3px solid silver;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: Transparent;
+}
+#btn-search {
+    margin-left: 10px;
+}
+table, tr, td {  
+    border: 3px solid silver;
+    border-collapse: collapse;
+}
+td button {
+    float: right;
+}
+.btn {
+    float: top;
+}
+.form-faculty, .edit-form-faculty, #list-faculty {
+    width: 250px;
+    border: 1px solid #ccc;
+    margin-left: 25px;
+    float: left;
+}
+.form-faculty {
+    margin-top: 65px;
+    display: none;
+}
+.edit-form-faculty {
+    margin-top: 65px;
+    display: none;
+}
+#list-faculty {
+    margin-top: 18px;
+    width: 950px;
+    display: none;
+}
+.form-class, .edit-form-class, #list-class {
+    width: 250px;
+    border: 1px solid #ccc;
+    margin-left: 25px;
+    float: left;
+}
+.form-class {
+    margin-top: 65px;
+    display: none;
+}
+.edit-form-class {
+    margin-top: 65px;
+    display: none;
+}
+#list-class {
+    margin-top: 18px;
+    width: 950px;
+    display: none;
+}

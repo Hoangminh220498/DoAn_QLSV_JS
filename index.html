@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/student.js"></script>
+    <script src="js/class.js"></script>
+    <script src="js/faculty.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Quản Lý Sinh Viên</title>
+</head>
+<body>
+    <fieldset>
+        <div class="btn">
+            <button type="text" onclick="khoa()" class="btn btn-info">Khoa</button>
+            <button type="text" onclick="lop()" class="btn btn-info">Lớp</button>
+            <button type="text" onclick="sinhVien()" class="btn btn-info">Sinh Viên</button>
+        </div> 
+        <h1>QUẢN LÝ SINH VIÊN</h1>
+        <div class="form-student" id="form-student"  style="font-weight: 1000;">
+            <fieldset>
+                <H4>THÔNG TIN SINH VIÊN</H4>
+                <div class="create">
+                    <div class="row">
+                        <div class="">
+                            <label for="">Tên Sinh Viên:</label>
+                            <input type="text" name="" id="ten">
+                        </div>
+                        <div class="">
+                            <label for="">Mã Sinh Viên:</label>
+                            <input type="text" name="" id="msv">
+                        </div>
+                        <div class="">
+                            <label for="lop">Lớp:</label>
+                            <br>
+                            <select name="" id="lop">
+                                <option value="">Chọn Lớp</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="khoa">Khoa:</label>
+                            <br>
+                            <select name="" id="khoa">
+                                <option value="">Chọn Khoa</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="">Điểm Toán:</label>
+                            <input type="text" name="day" id="toan">
+                        </div>
+                        <div class="">
+                            <label for="">Điểm Lý:</label>
+                            <input type="text" name="day" id="ly">
+                        </div>
+                        <div class="">
+                            <label for="">Điểm Hóa:</label>
+                            <input type="text" name="day" id="hoa">
+                        </div>
+                    </div> 
+                </div>       
+                <div class="row">    
+                    <div class=""></br>
+                        <button class ="btn btn-secondary" id="btnAdd" style="width: 100px; height: 30px;">Thêm</button>
+                    </div>
+                </div> 
+            </fieldset>
+        </div>  
+        
+        <div class="edit-form-student" id="edit"  style="font-weight: 1000;">
+            <fieldset>
+                <H4>CẬP NHẬT SINH VIÊN</H4>
+                <div class="edit">
+                    <div class="row">
+                        <div class="">
+                            <label for="">Tên Sinh Viên:</label>
+                            <input type="text" name="" id="edit_ten">
+                        </div>
+                        <div class="">
+                            <label for="">Mã Sinh Viên:</label>
+                            <input type="text" name="" id="edit_msv">
+                        </div>
+                        <div class="">
+                            <label for="">Lớp:</label>
+                            <br>
+                            <select name="" id="edit_lop">
+                                <option value="">Chọn Lớp</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="">Khoa:</label>
+                            <br>
+                            <select name="" id="edit_khoa">
+                                <option value="">Chọn Khoa</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="">Điểm Toán:</label>
+                            <input type="text" name="day" id="edit_toan">
+                        </div>
+                        <div class="">
+                            <label for="">Điểm Lý:</label>
+                            <input type="text" name="day" id="edit_ly">
+                        </div>
+                        <div class="">
+                            <label for="">Điểm Hóa:</label>
+                            <input type="text" name="day" id="edit_hoa">
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class=""></br>
+                            <button class ="btn btn-secondary" id="btnAdd" onclick="updateStudent()" style="width: 150px; height: 30px;">Lưu Thay Đổi</button>
+                        </div>
+                    </div>
+                </div>    
+            </fieldset>  
+        </div> 
+    
+        <div class="form-faculty" id="form-faculty"  style="font-weight: 1000;">
+            <fieldset>
+                <H3>THÔNG TIN KHOA</H3>
+                <div class="create">
+                    <div class="row">
+                        <div class="">
+                            <label for="">Tên Khoa:</label>
+                            <input type="text" name="" id="tenKhoa">
+                        </div>
+                    </div> 
+                </div>       
+                <div class="row">    
+                    <div class=""></br>
+                        <button class ="btn btn-secondary" id="btnAddFaculty" style="width: 100px; height: 30px;">Thêm</button>
+                    </div>
+                </div> 
+            </fieldset>
+        </div>  
+        
+        <div class="edit-form-faculty" id="edit-faculty"  style="font-weight: 1000;">
+            <fieldset>
+                <H3>CẬP NHẬT KHOA</H3>
+                <div class="edit">
+                    <div class="row">
+                        <div class="">
+                            <label for="">Tên Khoa:</label>
+                            <input type="text" name="" id="edit_tenKhoa">
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class=""></br>
+                            <button class ="btn btn-secondary" id="btnAddFaculty" onclick="updateFaculty()" style="width: 150px; height: 30px;">Lưu Thay Đổi</button>
+                        </div>
+                    </div>
+                </div>    
+            </fieldset>  
+        </div> 
+
+        <div class="form-class" id="form-class"  style="font-weight: 1000;">
+            <fieldset>
+                <H3>THÔNG TIN LỚP</H3>
+                <div class="create">
+                    <div class="row">
+                        <div class="">
+                            <label for="">Tên Lớp:</label>
+                            <input type="text" name="" id="tenLop">
+                        </div>
+                    </div> 
+                </div>       
+                <div class="row">    
+                    <div class=""></br>
+                        <button class ="btn btn-secondary" id="btnAddClass" style="width: 100px; height: 30px;">Thêm</button>
+                    </div>
+                </div> 
+            </fieldset>
+        </div>  
+        
+        <div class="edit-form-class" id="edit-class"  style="font-weight: 1000;">
+            <fieldset>
+                <H3>CẬP NHẬT LỚP</H3>
+                <div class="edit">
+                    <div class="row">
+                        <div class="">
+                            <label for="">Tên Lớp:</label>
+                            <input type="text" name="" id="edit_tenLop">
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class=""></br>
+                            <button class ="btn btn-secondary" id="btnAddClass" onclick="updateClass()" style="width: 150px; height: 30px;">Lưu Thay Đổi</button>
+                        </div>
+                    </div>
+                </div>    
+            </fieldset>  
+        </div> 
+
+        <div class="search-student">
+            <input type="text" id="search" placeholder="Nhập tên sinh viên"><button id="btn-search" onclick="search()">Tìm</button>                
+        </div>    
+
+        <div id="list-faculty">
+            <fieldset>
+                <H3>DANH SÁCH KHOA</H3>
+                <table class="table" border="1" width=900px>
+                    <thead>
+                        <tr  style="font-weight: 1000;">
+                            <td style="width: 50px;">ID</td>
+                            <td>Tên Khoa</td>
+                            <td style="width: 150px;">Hành Động</td>
+                        </tr>
+                    </thead>
+                    <tbody id="danh-sach-khoa">
+                        
+                    </tbody>
+                </table>
+            </fieldset>
+        </div>
+
+        <div id="list-class">
+            <fieldset>
+                <H3>DANH SÁCH LỚP</H3>
+                <table class="table" border="1" width=900px>
+                    <thead>
+                        <tr style="font-weight: 1000;">
+                            <td style="width: 50px;">ID</td>
+                            <td>Tên Lớp</td>
+                            <td style="width: 150px;">Hành Động</td>
+                        </tr>
+                    </thead>
+                    <tbody id="danh-sach-lop">
+                        
+                    </tbody>
+                </table>
+            </fieldset>
+        </div>
+
+        <div id="list-student">
+            <fieldset>
+                <H3>DANH SÁCH SINH VIÊN</H3>
+                <table class="table" border="1" width=900px>
+                    <thead>
+                        <tr style="font-weight: 1000;">
+                            <td>ID</td>
+                            <td>Tên Sinh Viên</td>
+                            <td>Mã Sinh Viên</td>
+                            <td>Lớp</td>
+                            <td>Khoa</td>
+                            <td>Điểm Toán</td>
+                            <td>Điểm Lý</td>
+                            <td>Điểm Hóa</td>
+                            <td style="width: 150px;">Hành Động</td>
+                        </tr>
+                    </thead>
+                    <tbody id="danh-sach-sinh-vien">
+                        
+                    </tbody>
+                </table>
+            </fieldset>
+        </div>
+    </fieldset>
+</body>
+</html>
